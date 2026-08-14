@@ -6,6 +6,7 @@ body {
   color: #1a1a1a;
   background: #fafafa;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 img { display: block; max-width: 100%; height: auto; }
 button { font: inherit; cursor: pointer; border: none; background: none; }
@@ -233,8 +234,25 @@ section, header, footer, .min-announcement, .gs-announcement { position: relativ
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
+  /* Minimalist navbar: stack link rows, drop the reserved side gutters */
   .min-navbar__row, .min-navbar__links--left, .min-navbar__icons { min-width: 0; }
-  .min-navbar__row { flex-wrap: wrap; }
+  .min-navbar__row { flex-wrap: wrap; row-gap: 10px; }
+  .min-navbar__links--left { order: 3; flex: 1 1 100%; justify-content: center; flex-wrap: wrap; gap: 14px; }
+  .min-navbar__links--secondary { flex-wrap: wrap; gap: 14px; row-gap: 8px; }
+
   .min-trust-banner { flex-direction: column; text-align: center; }
+  .min-hero-stack__caption { left: 16px; right: 16px; bottom: 16px; }
+  .min-footer__columns { gap: 32px 40px; text-align: center; }
+
+  /* Gymshark navbar: logo + icons stay on one line, links wrap below */
+  .gs-navbar__row { flex-wrap: wrap; row-gap: 10px; }
+  .gs-navbar__logo { order: 1; }
+  .gs-navbar__icons { order: 2; }
+  .gs-navbar__links {
+    order: 3; flex: 1 1 100%; flex-wrap: wrap; justify-content: center;
+    gap: 10px 16px; font-size: 11px;
+  }
+
   .gs-hero__overlay { left: 20px; right: 20px; bottom: 20px; max-width: none; }
-}
+  .gs-footer__columns { gap: 32px 40px; text-align: center; }
+                         }
