@@ -23,6 +23,10 @@ export const minimalist = {
       { name: 'Niacinamide Serum', tag: 'Acne Marks', price: '₹237' },
       { name: 'Vitamin C Serum', tag: 'Dullness & Spots', price: '₹284' },
       { name: 'BHA Face Serum', tag: 'Blackheads', price: '₹237' },
+      { name: 'Panthenol Moisturizer', tag: 'Barrier Repair', price: '₹332' },
+      { name: 'Niacinamide Serum', tag: 'Acne Marks', price: '₹237' },
+      { name: 'Vitamin C Serum', tag: 'Dullness & Spots', price: '₹284' },
+      { name: 'BHA Face Serum', tag: 'Blackheads', price: '₹237' },
     ],
   },
   categories: {

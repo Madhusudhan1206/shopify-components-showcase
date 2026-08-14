@@ -29,6 +29,10 @@ export const gymshark = {
       { name: 'Lift Support Hoodie', price: '$64', badge: 'New' },
       { name: 'Rest Day Jogger', price: '$52', badge: null },
       { name: 'Training Crop', price: '$34', badge: 'New' },
+      { name: 'Flex Seamless Legging', price: '$58', badge: 'Bestseller' },
+      { name: 'Lift Support Hoodie', price: '$64', badge: 'New' },
+      { name: 'Rest Day Jogger', price: '$52', badge: null },
+      { name: 'Training Crop', price: '$34', badge: 'New' },
     ],
   },
   editorial: {
